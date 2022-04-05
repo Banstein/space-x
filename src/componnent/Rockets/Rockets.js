@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Rocket() {
+function Rockets() {
   return (
     <div>Rocket</div>
   );
 }
 
-export default Rocket;
+export default Rockets;
