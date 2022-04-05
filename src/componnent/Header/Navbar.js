@@ -21,10 +21,10 @@ function Navbar() {
   ];
 
   return (
-    <nav>
-      <ul>
+    <nav className="nav-container flex-center">
+      <ul className="nav-links flex-center">
         {links.map((link) => (
-          <li key={link.id}>
+          <li key={link.id} className="nav-item">
             <NavLink to={link.path} className={(navData) => (navData.isActive ? 'active-link' : 'none')}>{link.text}</NavLink>
           </li>
         ))}
