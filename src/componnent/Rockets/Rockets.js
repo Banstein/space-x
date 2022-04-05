@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { rocketDispatcher } from '../../redux/rockets/rockets';
 
-function Rockets() {
+const Rockets = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(rocketDispatcher());
+  }, []);
+
   return (
-    <div>Rocket</div>
+    <div>
+      <h1>Rockets Page</h1>
+    </div>
   );
-}
+};
 
 export default Rockets;
