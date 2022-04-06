@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const RocketCard = ({
   id, description, name, image,
 }) => (
-  <div className="rocket-container flex-center">
+  <div className="rocket-container flex-center-center">
     <div className="rocket-image">
       <img src={image} alt={name} />
     </div>

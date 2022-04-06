@@ -18,6 +18,7 @@
 
 .description {
   padding: 1.1rem 0;
+  font-size: 1.2rem;
 }
 
 .reserve-btn {
@@ -26,4 +27,9 @@
   padding: 0.7rem 1rem;
   border-radius: 0.4rem;
   font-size: 1rem;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
 }
