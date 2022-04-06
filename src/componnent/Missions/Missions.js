@@ -24,9 +24,7 @@ export default function Missions() {
         <div className="mission-status-header">Status</div>
         <div className="mission-other-header">#</div>
       </div>
-      {missions.map((mission) => (
-        <Mission key={mission.missionId} mission={mission} />
-      ))}
+      {missions}
     </div>
   );
 }
