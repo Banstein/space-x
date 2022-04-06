@@ -1,7 +1,7 @@
-import { getMissionsApi } from '../../componnent/Missions/missionsApi';
+import getMissionsFromAPI from '../../componnent/Missions/MissionsApi';
 
 const GET_MISSIONS = 'space-x/missions/GET_MISSIONS';
-const INITIA_STATE = {};
+const INITIAL_STATE = {};
 
 export const getMissions = (data) => ({
   type: GET_MISSIONS,
@@ -9,11 +9,11 @@ export const getMissions = (data) => ({
 });
 
 export const getMissionsDispatcher = () => async (dispatch) => {
-  const missions = await getMissionsApi();
+  const missions = await getMissionsFromAPI();
   dispatch(getMissions(missions));
 };
 
-const missionsReducer = (state = INITIA_STATE, action) => {
+const missionsReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case GET_MISSIONS:
       return {
