@@ -1,19 +1,22 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Missions from './componnent/Missions/Missions';
 import Header from './componnent/Header/Header';
-import Rocket from './componnent/Rocket/Rocket';
+import Rockets from './componnent/Rockets/Rockets';
+import MyProfile from './componnent/MyProfile/MyProfile';
+import store from './redux/configureStore';
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
+const App = () => (
+  <div className="app">
+    <Header />
+    <Provider store={store}>
       <Routes>
-        <Route path="/" element={<Rocket />} />
+        <Route path="/" element={<Rockets />} />
         <Route path="/Missions" element={<Missions />} />
+        <Route path="/MyProfile" element={<MyProfile />} />
       </Routes>
-    </div>
-  );
-}
+    </Provider>
+  </div>
+);
 
 export default App;
