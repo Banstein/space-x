@@ -1,0 +1,29 @@
+.rockets {
+  margin-top: 2rem;
+}
+
+.rocket-list,
+.rocket-item {
+  height: 230px;
+}
+
+.rocket-container .rocket-image img {
+  height: 200px;
+  width: 270px;
+}
+
+.rocket-info {
+  padding-left: 1.6rem;
+}
+
+.description {
+  padding: 1.1rem 0;
+}
+
+.reserve-btn {
+  color: #fff;
+  background-color: #1278f8;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
