@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Missions from './componnent/Missions/Missions';
 import Header from './componnent/Header/Header';
+import Missions from './componnent/Missions/Missions';
 import Rockets from './componnent/Rockets/Rockets';
 import MyProfile from './componnent/MyProfile/MyProfile';
 import store from './redux/configureStore';
