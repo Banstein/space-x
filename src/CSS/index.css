@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import './base/header.css';
+@import './base/rockets.css';
 
 ::after,
 ::before,
@@ -32,7 +33,7 @@ button {
 
 .app {
   width: 95%;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
 }
 
 .clickable {
