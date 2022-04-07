@@ -29,22 +29,20 @@
   color: red;
 }
 
-.leave-mission-bt,
+.mission,
 .active-mb,
-.no-active-mb,
-.join-mission-bt {
+.no-active-mb {
   text-align: center;
   align-self: center;
   padding: 20px;
   width: 10%;
 }
 
+.mission * {
+  padding: 20px;
+}
+
 .leave-mission-bt,
 .join-mission-bt {
   cursor: pointer;
-}
-
-.active-mb,
-.no-active-mb {
-  margin-right: 20px;
 }

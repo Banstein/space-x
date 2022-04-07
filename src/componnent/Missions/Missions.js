@@ -6,15 +6,14 @@ import '../../CSS/base/missions.css';
 
 export default function Missions() {
   const dispatch = useDispatch();
-  const missionsDatas = useSelector((state) => state.missionsReducer);
+  const isMissionsStored = useSelector((state) => state.missionsReducer.isMissionsStored || false);
+  const missions = useSelector((state) => state.missionsReducer.missions || []);
 
   useEffect(() => {
-    dispatch(getMissionsDispatcher());
-  }, []);
-
-  const missionsList = missionsDatas.data;
-  const missions = missionsList
-    ? missionsList.map((mission) => <Mission key={mission.missionId} mission={mission} />) : [];
+    if (!isMissionsStored) {
+      dispatch(getMissionsDispatcher());
+    }
+  });
 
   return (
     <div className="missions-container">
@@ -24,7 +23,9 @@ export default function Missions() {
         <div className="mission-status-header">Status</div>
         <div className="mission-other-header">#</div>
       </div>
-      {missions}
+      {missions.map((mission) => (
+        <Mission key={mission.missionId} mission={mission} />
+      ))}
     </div>
   );
 }

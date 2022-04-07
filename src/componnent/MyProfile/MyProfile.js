@@ -2,8 +2,10 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
+  const missionsList = useSelector((state) => state.missionsReducer.missions);
   const rockets = useSelector((state) => state.rocketsReducer.data);
   const reservedRockets = rockets || [];
+  const missions = missionsList || [];
 
   return (
     <section className="profile-section">
@@ -27,6 +29,18 @@ const MyProfile = () => {
           </ul>
         </div>
       </div>
+      <section className="missions-section">
+        <h2>My Missions </h2>
+        <ul>
+          {missions
+            .filter((mission) => mission.status)
+            .map((filteredMission) => (
+              <li key={filteredMission.missionId}>
+                {filteredMission.missionName}
+              </li>
+            ))}
+        </ul>
+      </section>
     </section>
   );
 };
