@@ -4,12 +4,16 @@
 
 .rocket-list,
 .rocket-item {
-  height: 230px;
+  padding-bottom: 1.4rem;
 }
 
-.rocket-container .rocket-image img {
+.rocket-container {
+  justify-content: start;
+}
+
+.rocket-image img {
   height: 200px;
-  width: 270px;
+  width: 240px;
 }
 
 .rocket-info {
@@ -17,8 +21,17 @@
 }
 
 .description {
+  display: block;
   padding: 1.1rem 0;
   font-size: 1.2rem;
+}
+
+.reserved {
+  background-color: #19a3b9;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  margin-right: 5px;
 }
 
 .reserve-btn {
@@ -29,7 +42,41 @@
   font-size: 1rem;
 }
 
-.flex-center-center {
-  display: flex;
-  align-items: center;
+.cancel-btn {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  color: #878d94;
+  box-shadow: 1px 2px 2px #878d94, -0.5px -1px 1px #878d94;
+}
+
+@media screen and (max-width: 842px) {
+  .rockets,
+  .rockets-list,
+  .rocket-item {
+    margin-bottom: 1.3rem;
+  }
+
+  .rocket-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rocket-image img {
+    height: 200px;
+    width: 270px;
+  }
+
+  .rocket-info {
+    padding: 0 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .description {
+    text-align: justify;
+  }
 }

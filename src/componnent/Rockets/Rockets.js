@@ -33,7 +33,7 @@ const Rockets = () => {
   return (
     <section>
       <div className="rockets">
-        <ul classeName="rocket-list">
+        <ul className="rocket-list">
           {rocketsList}
         </ul>
       </div>
