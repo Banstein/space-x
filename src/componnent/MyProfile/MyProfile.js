@@ -12,8 +12,8 @@ const MyProfile = () => {
         <div className="reserv-rockets">
           <ul className="reserv-rockets-list">
             {reservedRockets.length === 0 ? (
-              <li style={{ padding: '0.9rem' }}>
-                <span className="no-reserved-rocket">No Rockets Reserved</span>
+              <li className="no-reserved-rocket">
+                No Rockets Reserved
               </li>
             ) : (
               reservedRockets
