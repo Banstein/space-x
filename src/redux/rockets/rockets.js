@@ -2,6 +2,7 @@ import fetchRocketsApiData from '../../componnent/Rockets/fetchApiData';
 
 const GET_ROCKETS = 'space-x/rockets/GET_ROCKETS';
 const RESERVATION_ROCKETS = 'space-x/rockets/RESERVATION_ROCKETS';
+const CANCEL_ROCKET_BOOKING = 'space-X/CANCEL_ROCKET_BOOKING';
 
 const initialState = {
   isDataStored: false,
@@ -14,7 +15,12 @@ export const getRockets = (data) => ({
 
 export const reserveRocket = (id) => ({
   type: RESERVATION_ROCKETS,
-  paylaod: id,
+  payload: id,
+});
+
+export const cancelRocketBooking = (id) => ({
+  type: CANCEL_ROCKET_BOOKING,
+  payload: id,
 });
 
 export const rocketDispatcher = () => async (dispatch) => {
@@ -30,12 +36,27 @@ const rocketsReducer = (state = initialState, action) => {
         isDataStored: true,
         data: action.payload,
       };
+
     case RESERVATION_ROCKETS:
       return {
-        isDataStore: true,
+        ...state,
+        isDataStored: true,
         data: state.data.map((rocket) => {
           const reserved = rocket.id === action.payload
             ? { ...rocket, reserved: true }
+            : { ...rocket };
+
+          return reserved;
+        }),
+      };
+
+    case CANCEL_ROCKET_BOOKING:
+      return {
+        ...state,
+        isDataStored: true,
+        data: state.data.map((rocket) => {
+          const reserved = rocket.id === action.payload
+            ? { ...rocket, reserved: false }
             : { ...rocket };
 
           return reserved;
