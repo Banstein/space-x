@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../../redux/rockets/rockets';
+import { reserveRocket, cancelRocketBooking } from '../../redux/rockets/rockets';
 
 const RocketCard = ({
   id, description, name, image, reserved,
@@ -12,15 +12,20 @@ const RocketCard = ({
     dispatch(reserveRocket(+id));
   };
 
+  const cancelReservation = (e) => {
+    const { id } = e.target;
+    dispatch(cancelRocketBooking(+id));
+  };
+
   return (
-    <div className="rocket-container flex-center-center">
+    <div className="rocket-container flex-center">
       <div className="rocket-image">
         <img src={image} alt={name} />
       </div>
       <div className="rocket-info">
         <h3 className="rocket-name">{name}</h3>
         <p className="description">
-          {reserved && (<span className="reserved">Reserved</span>)}
+          {reserved && <span className="reserved">Reserved</span>}
           {description}
         </p>
         {!reserved && (
@@ -30,7 +35,17 @@ const RocketCard = ({
             className="reserve-btn clickable"
             onClick={reservingRocket}
           >
-            Reserve Rockets
+            Reserve Rocket
+          </button>
+        )}
+        {reserved && (
+          <button
+            type="button"
+            id={id}
+            className="cancel-btn clickable"
+            onClick={cancelReservation}
+          >
+            Cancel Reservation
           </button>
         )}
       </div>

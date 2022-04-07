@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const ROCKETS_API = 'https://api.spacexdata.com/v3/rockets';
+const url = 'https://api.spacexdata.com/v3/rockets';
 
 const fetchRocketsApiData = async () => {
-  const getData = await axios.get(ROCKETS_API);
+  const getData = await axios.get(url);
   const Rockets = [];
 
   getData.data.forEach((rocketItem) => {
