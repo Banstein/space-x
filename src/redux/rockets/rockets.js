@@ -30,6 +30,17 @@ const rocketsReducer = (state = initialState, action) => {
         isDataStored: true,
         data: action.payload,
       };
+    case RESERVATION_ROCKETS:
+      return {
+        isDataStore: true,
+        data: state.data.map((rocket) => {
+          const reserved = rocket.id === action.payload
+            ? { ...rocket, reserved: true }
+            : { ...rocket };
+
+          return reserved;
+        }),
+      };
 
     default:
       return state;
