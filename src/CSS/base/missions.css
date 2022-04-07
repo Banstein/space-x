@@ -1,0 +1,22 @@
+.header-missions,
+.mission-container {
+  display: flex;
+}
+
+.mission-container {
+  margin-bottom: 30px;
+}
+
+.header-missions {
+  margin: 20px 0;
+}
+
+.mission-name,
+.mission-name-header {
+  width: 200px;
+}
+
+.mission-description,
+.mission-description-header {
+  width: 50%;
+}
