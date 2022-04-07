@@ -11,6 +11,7 @@ const getMissionsFromAPI = async () => {
       missionId: mission.mission_id,
       missionName: mission.mission_name,
       description: mission.description,
+      status: false,
     });
   });
   return missions;
