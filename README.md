@@ -1,44 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Space-X
 
-## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+> |     | Rockets page                           | Missions page                      |     |
+> | --- | ----------------------------------- | ------------------------------------ | --- |
+> |     | ![Screenshot1](./src/images/rockets.png) | ![Screenshot2](./src/images/missions.png) |
+> |     | MyProfile page                         |
+> |     | ![Screenshot1](./src/images/myprofile.png) |
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> "Space-X" is a website that allows users to book rockets and join selected space missions by using data from the SpaceX API.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+This project is built with:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ![React](https://img.shields.io/badge/-React-1d1919?style=flat&logo=react)
+- ![Redux](https://img.shields.io/badge/-Redux-1d1919?style=flat&logo=redux)
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-1d1919?style=flat&logo=javascript)
+- ![HTML](https://img.shields.io/badge/-HTML-1d1919?style=flat&logo=html5)
+- ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click [here]() to see the live demo
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get the content of this project locally you need to run these commands in your terminal.
+Before starting the steps below, be sure you have [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/) and [Node.js](https://nodejs.dev/learn/how-to-install-nodejs) installed in your computer.
 
-### `npm run eject`
+1. `git clone https://github.com/Banstein/space-x.git`
+2. `cd space-x`
+3. `npm install` 
+  This will download all the dependancies of the project.
+4. `npm start` 
+  The page will open at http://localhost:3000 in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It correctly bundles React in production mode and optimizes the build for the best performance. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For tracking linter errors locally you need to follow these steps:
 
-## Learn More
+- After cloning the project make sure you have run this command
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  > `npm install` command
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- For tracking the linter errors in CSS file run:
+
+  > `npx stylelint "\*_/_.{css,scss}"`
+
+- For tracking the linter errors in JavaScript file run:
+
+  > `npx eslint .`
+
+- And For running some unit tests:
+
+  > `npm test`
+
+## Authors
+
+👤 **Islam Bahnas**
+
+- GitHub: [@Banstein](https://github.com/Banstein)
+- Twitter: [@islam_bahnas](https://twitter.com/islam_bahnas)
+- LinkedIn: [islam-bahnas](www.linkedin.com/in/islam-bahnas)
+
+👤 **Cynthia Inga Candy**
+
+- GitHub: [@cynthiainga](https://github.com/cynthiainga)
+- Twitter: [@CynthiaInga_C](https://twitter.com/CynthiaInga_C)
+- LinkedIn: [Cynthia Inga](https://www.linkedin.com/in/cynthia-inga/)
+
+## :handshake: Contributing
+
+Feel free to check the [issues page](https://github.com/Banstein/space-x/issues)
+
+## Show your support
+
+Give a :star: if you like this project!
+
+## Acknowledgments
+
+- Thanks to everyone who will get time to check this code especially to code reviewers.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
