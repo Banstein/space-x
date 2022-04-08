@@ -34,7 +34,7 @@ const MyProfile = () => {
         <ul>
           {missions.length === 0 ? (
             <li className="no-reserved-mission">
-              No Missions Reserved
+              No Mission Reserved
             </li>
           ) : (
             missions
