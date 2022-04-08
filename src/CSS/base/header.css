@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid #888;
+}
+
+.logo .app-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo .title {
+  padding-left: 0.6rem;
+  font-size: 1.8rem;
+}
+
+.nav-container,
+.nav-link,
+.nav-item {
+  margin-left: 1rem;
+  padding-right: 1.4rem;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #1278f8;
+  font-weight: 600;
+}
+
+a.active-link {
+  border-bottom: 2.5px solid #1278f8;
+}

@@ -1,0 +1,82 @@
+.header-missions,
+.mission-container {
+  display: flex;
+}
+
+.missions-container {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.header-missions {
+  padding-top: 20px;
+}
+
+.header-missions div,
+.mission-container div {
+  padding: 20px;
+}
+
+.mission-name,
+.mission-name-header,
+.mission-status-header,
+.mission-other-header {
+  width: 200px;
+}
+
+.mission-description,
+.mission-description-header {
+  width: 600px;
+}
+
+.active-mb,
+.no-active-mb,
+.mission {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.active-mb span {
+  background-color: #17a1b7;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.leave-mission-bt {
+  color: red;
+}
+
+.no-active-mb span {
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.mission button {
+  padding: 6px;
+  background: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.missions-container > div > div {
+  border: 0.2px solid rgba(128, 128, 128, 0.63);
+}
+
+.missions-container > div:nth-child(even) > div {
+  background-color: #f2f2f2;
+}
+
+.no-active-mb,
+.mission-status-header,
+.active-mb {
+  width: 150px;
+}
+
+.mission,
+.mission-other-header {
+  width: 150px;
+}

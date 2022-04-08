@@ -1,0 +1,61 @@
+.profile-section {
+  margin: 1rem auto;
+  padding-top: 0.6rem;
+  width: 90%;
+  display: flex;
+}
+
+.missions-section,
+.rockets-profile-container {
+  width: 48%;
+}
+
+.missions-section ul,
+.reserv-rockets-list {
+  border: 1px solid #878d94;
+  border-radius: 0.25rem;
+}
+
+.missions-section ul li,
+.reserved-rocket-item {
+  border-bottom: 1px solid #878d94;
+  padding: 0.9rem;
+}
+
+.name {
+  color: #5d5f61;
+}
+
+.missions-section ul,
+.reserved-rocket-item:last-child {
+  border-bottom: none;
+}
+
+.no-reserved-rocket {
+  padding: 0.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #5d5f61;
+}
+
+/* missions */
+
+.missions-section {
+  margin-left: 50px;
+}
+
+.missions-section h2 {
+  padding-bottom: 1rem;
+}
+
+.missions-section ul li {
+  color: #5d5f61;
+  font-weight: bold;
+}
+
+.no-reserved-mission {
+  padding: 0.5rem !important;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #5d5f61;
+}
