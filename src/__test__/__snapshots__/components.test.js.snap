@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if Mission renders correctly 1`] = `
+<div
+  className="mission-container"
+>
+  <div
+    className="mission-name"
+  >
+    test mission name
+  </div>
+  <div
+    className="mission-description"
+  >
+    description
+  </div>
+  <div
+    className="no-active-mb"
+  >
+    <span>
+       NOT A MEMBER
+    </span>
+  </div>
+  <div
+    className="mission"
+  >
+    <button
+      className="join-mission-bt"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test if Missions renders correctly 1`] = `
+<div
+  className="missions-container"
+>
+  <div
+    className="header-missions"
+  >
+    <div
+      className="mission-name-header"
+    >
+      Mission
+    </div>
+    <div
+      className="mission-description-header"
+    >
+      Description
+    </div>
+    <div
+      className="mission-status-header"
+    >
+      Status
+    </div>
+    <div
+      className="mission-other-header"
+    >
+      #
+    </div>
+  </div>
+</div>
+`;
