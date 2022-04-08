@@ -30,11 +30,11 @@ const MyProfile = () => {
         </div>
       </div>
       <section className="missions-section">
-        <h2>My Missions </h2>
+        <h2>My Mission </h2>
         <ul>
           {missions.length === 0 ? (
             <li className="no-reserved-mission">
-              No Missions Reserved
+              No Mission Reserved
             </li>
           ) : (
             missions
