@@ -32,13 +32,19 @@ const MyProfile = () => {
       <section className="missions-section">
         <h2>My Missions </h2>
         <ul>
-          {missions
-            .filter((mission) => mission.status)
-            .map((filteredMission) => (
-              <li key={filteredMission.missionId}>
-                {filteredMission.missionName}
-              </li>
-            ))}
+          {missions.length === 0 ? (
+            <li className="no-reserved-mission">
+              No Missions Reserved
+            </li>
+          ) : (
+            missions
+              .filter((mission) => mission.status)
+              .map((filteredMission) => (
+                <li key={filteredMission.missionId}>
+                  {filteredMission.missionName}
+                </li>
+              ))
+          )}
         </ul>
       </section>
     </section>
