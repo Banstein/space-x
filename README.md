@@ -24,7 +24,7 @@ This project is built with:
 
 ## Live Demo
 
-Click [here]() to see the live demo
+Click [here](https://space-x-travelers.herokuapp.com/) to see the live demo
 
 ## Getting Started
 
